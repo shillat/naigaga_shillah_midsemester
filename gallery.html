@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
+
+<body>
+    <nav>
+        <li><a href="index.html">Home PAGE</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">Gallery page</a></li>
+    </nav>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Photo Gallery</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .gallery-item {
+                margin: 10px;
+                width: calc(25% - 20px);
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .gallery-item img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                transition: transform 0.2s ease;
+            }
+
+            .gallery-item img:hover {
+                transform: scale(1.1);
+            }
+
+            @media only screen and (max-width: 768px) {
+                .gallery-item {
+                    width: calc(50% - 20px);
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .gallery-item {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Photo Gallery</h1>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="mumimg.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="broimg.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="my.jpg" alt="Image 3">
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+
+
+</body>
+
+</html>

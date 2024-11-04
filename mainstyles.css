@@ -1,0 +1,186 @@
+style.css * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .family-section,
+    .friends-section {
+        margin-bottom: 20px;
+    }
+
+    .family-member,
+    .friend {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .family-member img,
+    .friend img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+
+
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    .input-field {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .message-field {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .submit-btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background-color: #444;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
+
+    .social-media a {
+        margin-right: 10px;
+    }
+
+    .social-media i {
+        font-size: 24px;
+        color: #333;
+    }
+
+
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        width: calc(25% - 20px);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        transition: transform 0.2s ease;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    .about-section {
+        margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+        margin-top: 0;
+    }
+
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member {
+        margin: 20px;
+        width: calc(25% - 40px);
+        text-align: center;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    /* Responsive Styles */
+
+    @media only screen and (max-width: 768px) {
+        .gallery-item {
+            width: calc(50% - 20px);
+        }
+
+        .team-member {
+            width: calc(50% - 40px);
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .gallery-item {
+            width: 100%;
+        }
+
+        .team-member {
+            width: 100%;
+        }
+    }
